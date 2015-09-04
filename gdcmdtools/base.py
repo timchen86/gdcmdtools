@@ -4,7 +4,6 @@
 import os
 from oauth2client.file import Storage
 from oauth2client.client import flow_from_clientsecrets
-from oauth2client.tools import run
 from apiclient.discovery import build
 
 import httplib2
@@ -18,7 +17,7 @@ logger.setLevel(logging.INFO)
 BASE_INFO = {
         "app":"gdcmdtools",
         "description":'Google Drive command line tools',
-        "version":'0.95'}
+        "version":'0.96'}
 
 GDAPI_VER = 'v2'
 FTAPI_VER = 'v1'
